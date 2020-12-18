@@ -1,0 +1,30 @@
+{
+    "name": "vitta-challenge",
+    "version": "2.0",
+    "description": "Desafio tecnico vitta - back-end",
+    "scripts": {
+        "start": "npm install && node ./server"
+    },
+    "engines": {
+        "node": ">=6.10.2",
+        "npm": ">=3.10.10"
+    },
+    "author": "Leonardo Araujo",
+    "dependencies": {
+        "basic-auth": "^1.1.0",
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.17.1",
+        "cors": "^2.8.1",
+        "ejs": "^2.5.7",
+        "export-config": "^1.0.0",
+        "express": "^4.15.2",
+        "jsonwebtoken": "^7.4.2",
+        "moment": "^2.18.1",
+        "mongo-querystring": "^4.1.1",
+        "mongodb": "^2.2.25",
+        "morgan": "^1.8.1",
+        "supertest-as-promised": "^4.0.2",
+        "tv4": "^1.3.0",
+        "winston": "^2.3.1"
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body ng-app="vitta-challange" ng-cloak ng-controller="dashboardController as vm">
+    <section class="container">
+        <h2>Desafio tecnico Vitta - Leonardo Araujo</h2>
+        <h2>Dashboard</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <p><strong>Lista de territórios ordenados pela área mais pintada: </strong></p>
+                <ul>
+                    <li ng-repeat="t in mostPaintedArea">Territory: {{t.name}} - Painted Area: {{t.painted_area}}</li>
+                </ul>
+            </div>
+            <div class="col-md-12">
+                <p><strong>Lista de territórios ordenados por área pintada mais proporcional: </strong></p>
+                <ul>
+                    <li ng-repeat="t in mostPaintedArea">Territory: {{t.name}} - Painted Area: {{t.painted_area}}</li>
+                </ul>
+            </div>
+            <div class="col-md-12">
+                <p><strong>Lista dos últimos 5 quadrados pintados: </strong></p>
+                <ul>
+                    <li ng-repeat="s in listOfLastSquares">X: {{s.x}} - Y: {{s.y}}</li>
+                </ul>
+            </div>
+            <div class="col-md-12">
+                <p><strong>Lista dos últimos 5 erros: </strong></p>
+                <ul>
+                    <li ng-repeat="e in listOfLast5Errors">{{e.entity.toLowerCase()}}/{{e.error_message}}</li>
+                </ul>
+            </div>
+            <div class="col-md-12">
+                <p><strong>Área pintada / área total: </strong>{{paintedAreaTotal}}/{{totalAreaTerritory}}</p>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="app/module.js"></script>
+        <script src="app/controllers/dashboard.js"></script>
+</body>
+
+</html>
