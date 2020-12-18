@@ -19,6 +19,9 @@ Comando para finalizar a aplicacao:
 Adicionar no Docker:
 Preferences > Resources > File Sharing : /data/mongodb/db
 
+Repositorio hub.docker:
+https://hub.docker.com/r/laaraujo1990/leonardo_vitta_teste_node
+
 # Funcionalidades
 Endereço localhost:8888
 Rotas:
